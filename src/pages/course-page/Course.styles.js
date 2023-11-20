@@ -5,11 +5,24 @@ export const CourseInfoPage = styled.main`
   margin-left: calc(50% - 580px);
   margin-right: calc(50% - 580px);
 `
+export const CourseTop = styled.div`
+  position: relative;
+  margin-top: 75px;
+`
 
 export const CourseImg = styled.img`
-  margin-top: 75px;
   width: 1160px;
   height: 310px;
+`
+export const CourseTitle = styled.p`
+  position: absolute;
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.8px;
+  top: 30px;
+  left: 30px;
 `
 
 export const CourseAdvantages = styled.section``
@@ -34,9 +47,17 @@ export const ItemAdvantages = styled.div`
   gap: 24px;
 `
 
-export const ItemImg = styled.img`
+export const ItemCircle = styled.div`
+  border-radius: 1202.287px;
+  background: #c7e957;
   width: 67px;
   height: 67px;
+  color: #000;
+  font-size: 32px;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export const ItemText = styled.p`
@@ -97,3 +118,15 @@ export const FooterButton = styled(ButtonPurple)`
   width: 275px;
 `
 export const FooterImg = styled.img``
+
+export const ModalBackground = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+`
